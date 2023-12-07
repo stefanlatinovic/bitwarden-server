@@ -3,7 +3,7 @@
 @using Bit.Core.AdminConsole.Enums.Provider
 @inject Bit.Admin.Services.IAccessControlService AccessControlService;
 
-@model OrganizationEditModel
+@model Bit.Admin.AdminConsole.Models.OrganizationEditModel
 
 @{
     var canViewGeneralDetails = AccessControlService.UserHasPermission(Permission.Org_GeneralDetails_View);

@@ -1,4 +1,5 @@
-﻿using Bit.Admin.Enums;
+﻿using Bit.Admin.AdminConsole.Models;
+using Bit.Admin.Enums;
 using Bit.Admin.Models;
 using Bit.Admin.Services;
 using Bit.Admin.Utilities;
@@ -21,7 +22,7 @@ using Bit.Core.Vault.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Bit.Admin.Controllers;
+namespace Bit.Admin.AdminConsole.Controllers;
 
 [Authorize]
 public class OrganizationsController : Controller

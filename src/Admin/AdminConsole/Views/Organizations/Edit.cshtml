@@ -1,6 +1,6 @@
 ﻿@using Bit.Admin.Enums;
 @inject Bit.Admin.Services.IAccessControlService AccessControlService
-@model OrganizationEditModel
+@model Bit.Admin.AdminConsole.Models.OrganizationEditModel
 @{
     ViewData["Title"] = (Model.Provider != null ? "Client " : string.Empty) + "Organization: " + Model.Organization.Name;
 
