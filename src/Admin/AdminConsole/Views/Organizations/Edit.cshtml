@@ -1,4 +1,6 @@
 ﻿@using Bit.Admin.Enums;
+@using Bit.Admin.Models
+@using Bit.Core.Enums
 @inject Bit.Admin.Services.IAccessControlService AccessControlService
 @model Bit.Admin.AdminConsole.Models.OrganizationEditModel
 @{
@@ -73,7 +75,7 @@
 {
     <h2>Billing Information</h2>
     @await Html.PartialAsync("_BillingInformation",
-        new BillingInformationModel { BillingInfo = Model.BillingInfo, OrganizationId = Model.Organization.Id, Entity = "Organization" })
+        new BillingInformationModel() { BillingInfo = Model.BillingInfo, OrganizationId = Model.Organization.Id, Entity = "Organization" })
 }
 
 @await Html.PartialAsync("_OrganizationForm", Model)
